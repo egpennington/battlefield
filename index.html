@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Battle Field | a game of chance</title>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li class="btn"><a href="/index.html">HOME</a></li>
+      <li class="btn"><a href="/about.html">ABOUT</a></li>
+      <li class="btn"><a href="/contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <div class="header">
+    <h1>BATTLE FIELD</h1>
+    <h3>a game of chance</h3>
+    <p>Choose your side...</p>
+  </div>
+ 
+  <div class="battleField">
+    <div class="box box-1" id="play-el">0</div>
+    <button class="btn-battle" onclick="battleStart()">Click to Battle</button>
+    <div class="box box-2" id="play2-el">0</div>
+    <div class="box box-3" id="score-el"></div>
+    <p class="box">SCORE</p>
+    <div class="box box-4" id="score-el2"></div>
+  </div>
+  <a href="#" class="btn reset" onclick="reset()"><i class="fa-solid fa-backward-step"></i> RESET </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

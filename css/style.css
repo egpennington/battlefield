@@ -1,0 +1,203 @@
+:root {
+  --light-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #cfbdec;
+  --accent-color: #742ff6;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+li {
+  list-style: none;
+}
+.pd-10 {
+  padding-top: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.btn {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  text-align: center;
+  margin: 5px auto;
+  padding-top: 10px;
+}
+
+.btn:hover { opacity: 0.6; }
+
+.btn-battle {
+  background: url(https://images.pexels.com/photos/25755/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+  color: var(--light-color);
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #333;
+  border-radius: 10px;
+}
+
+.reset {
+  display: inline-block;
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.battleField {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2rem;
+  margin-top: 15px;
+}
+
+.box {
+  font-size: 5rem;
+  text-align: center;
+  color: ;var(--dark-color);
+}
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  background: #cfbded;
+  margin: 5px auto;
+}
+.box-2 {
+  width: 100px;
+  height: 100px;
+  background: #cfbded;
+  
+}
+.box-3 {
+  width: 120px;
+  height: 100px;
+  background: #cfbded;
+  margin: 5px auto;
+  
+}
+.box-4 {
+  width: 120px;
+  height: 100px;
+  background: #cfbded;
+}
+
+/* ABout page */
+.about-game {
+  display: grid;
+  grid-gap: 10px;
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+}
+.about-game button {  
+  width: 400px;
+  height: 200px;
+}
+
+.about-game p {
+  background: var(--primary-color);
+  padding: 15px 20px;  
+  color: #fff;
+  text-shadow: 2px 2px 5px #333;
+  border-radius: 5px;
+}
+
+/* Contact Form area */
+.contact {
+  background: url(https://images.pexels.com/photos/25755/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px #333;
+}
+
+.contact-form {
+  max-width: 700px;
+  padding: 30px 0;
+  margin: 5px auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  display: block;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px var(--primary-color) solid;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.contact-form .btn {
+  width: 20rem;
+}
+
+::placeholder {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+/* Success page */
+.success p { margin-bottom: 10px; }
+.success a {
+  color: var(--dark-color);
+}
+
+/* Footer page */
+.footer {
+  text-align: center;
+  background: var(--primary-color);
+  color: #fff;
+  bottom: 0;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+}
